@@ -23,9 +23,9 @@ export const Addtodo = () => {
       <input 
       type='text' value={todo}
       placeholder='Add a Task ......'
-      className='rounded-full px-5 border-b-2 border-red-700 border-spacing-4 outline-none placeholder-red-800 placeholder-opacity-70 pl-3'
+      className='rounded-full px-9 border-b-2 border-red-700 border-spacing-4 outline-none placeholder-red-800 placeholder-opacity-70 pl-3'
       onChange={(e)=>setTodo(e.target.value)}/>
-      <button type='submit' className='bg-red-950 text-gray-100 -ml-12 h-7 shadow-sm shadow-zinc-950 rounded-full w-20'>Add</button>
+      <button type='submit' className='bg-red-800 text-gray-100 -ml-12 h-7 shadow-sm shadow-zinc-950 rounded-full w-24 border-neutral-950 border-3'>Add</button>
     </form>
     </>
   )

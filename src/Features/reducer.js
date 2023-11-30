@@ -35,7 +35,6 @@ export const todoSlice = createSlice({
             },
         completeTodo:(state,action)=>{
          state.todos = state.todos.map((todo)=>(todo.id===action.payload? { ...todo, completed: !todo.completed } : todo))
-      
         }
     }
 })
