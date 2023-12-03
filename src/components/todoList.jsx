@@ -59,7 +59,7 @@ export const TodoList = () => {
                 onChange={() => dispatch(completeTodo(todo.id))} />
 
               {/* input  */}
-              <input className={`text-white md:font-semibold bg-inherit outline-none pl-2 mr-2
+              <input className={`text-white max-sm:w-32 md:font-semibold bg-inherit outline-none pl-2 mr-2
                ${todo.completed ? "line-through text-opacity-40" : ""}
                ${updateId !== todo.id ? "" : "border-b-2 border-red-600 text-red-500"}`}
                 type='text'
