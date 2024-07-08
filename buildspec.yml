@@ -12,8 +12,6 @@ phases:
   post_build:
     commands:
       - echo Build completed on `date`
-      - mkdir -p dist
-      - cp -r build/* dist/
 artifacts:
   files:
     - dist/**/*
