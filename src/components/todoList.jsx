@@ -65,7 +65,8 @@ export const TodoList = () => {
                 type='text'
                 defaultValue={todo.text}
                 onChange={(e) => setUpdateTodo(e.target.value)}
-                disabled={updateId !== todo.id} />
+                disabled={updateId !== todo.id}
+                required />
 
 
               {/* delete  */}
