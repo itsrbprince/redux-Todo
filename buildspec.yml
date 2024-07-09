@@ -2,18 +2,23 @@ version: 0.2
 
 phases:
   install:
+    runtime-versions:
+      nodejs: 18
+   
     commands:
-      - echo Installing NPM dependencies...
-      - npm install
+        # install npm
+        - npm install
+       
   build:
     commands:
-      - echo Build started on `date`
-      - npm run build
-  post_build:
-    commands:
-      - echo Build completed on `date`
+        # run build script
+        - npm run build
+     
 artifacts:
+  # include all files required to run the application
   files:
-    - dist/**/*
+    - public/**/*
+    - src/**/*
+    - package.json
     - appspec.yml
-    - scripts/*
+    - scripts/**/*
